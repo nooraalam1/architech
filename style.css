@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans:wght@600&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Header Part */
+.title1 {
+  font-size: 25px;
+}
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-class ul {
+  display: flex;
+}
+.nav-class li {
+  margin: 15px;
+}
+.h {
+  text-align: center;
+}
+.btn {
+  width: 180px;
+  height: 64px;
+  border-radius: 8px;
+  background: #ff900e;
+  border: none;
+  cursor: pointer;
+}
+.nav-class a {
+  text-decoration: none;
+}
+.nav-class li {
+  list-style: none;
+}
+.header-pic {
+  width: 80vw;
+  margin: auto;
+}
+.header1 {
+  background-color: rgba(255, 143, 14, 0.335);
+}
+
+/* responsive header */
+@media screen and (max-width: 576px) {
+  .title1 {
+    font-size: 15px;
+  }
+  .header1 {
+    background-color: white;
+    font-weight: 200;
+  }
+}
