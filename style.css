@@ -1,20 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans:wght@600&display=swap");
+
 * {
+  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   padding: 0px;
   margin: 0px;
 }
-.header1 {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2.5em;
-  align-items: center;
-}
-.navv ul {
-  display: flex;
-  list-style: none;
-}
 .navv a {
   text-decoration: none;
+  margin: 1.25em;
+  color: #424242;
 }
-.navv li {
-  margin: 1em;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 99vw;
+}
+.title > h1 {
+  font-size: 1.7em;
+}
+.title2 > h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.btn {
+  border-radius: 8px;
+  background: #ff900e;
+  border: none;
+  padding: 1.25em 1.5625em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.title2 {
+  width: 99vw;
+  text-align: center;
+  padding-top: 6.37em;
+}
+.head {
+  padding-top: 1.5em;
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.head-img {
+  width: 80vw;
+  margin: auto;
+}
+.title2 > p {
+  padding-top: 2em;
+}
+
+/* header responsive */
+@media screen and (max-width: 576px) {
+  .title {
+    flex-direction: column;
+  }
+  .navv a {
+    margin: auto;
+  }
+  .title2 > p {
+    width: 90vw;
+    margin: auto;
+  }
+  .navv {
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .title2 > p {
+    width: 90vw;
+    margin: auto;
+    font-size: 1.25em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .title2 > p {
+    width: 90vw;
+    font-size: 1.9em;
+  }
+  .navv a {
+    font-size: 1.5em;
+    margin: 0.125em;
+  }
 }
