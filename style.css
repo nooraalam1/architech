@@ -5,6 +5,7 @@
   font-family: "Work Sans", sans-serif;
   padding: 0px;
   margin: 0px;
+  /* border: 1px solid red; */
 }
 .navv a {
   text-decoration: none;
@@ -15,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 99vw;
+  width: 98vw;
 }
 .title > h1 {
   font-size: 1.7em;
@@ -31,9 +32,10 @@
   padding: 1.25em 1.5625em;
   margin-top: 2em;
   margin-bottom: 2em;
+  color: white;
 }
 .title2 {
-  width: 99vw;
+  width: 98vw;
   text-align: center;
   padding-top: 6.37em;
 }
@@ -44,12 +46,38 @@
 .head-img {
   width: 80vw;
   margin: auto;
+  padding-bottom: 1.5em;
 }
 .title2 > p {
   padding-top: 2em;
 }
+.gray {
+  color: #424242;
+}
+.orange {
+  color: #ff900e;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.four-picture img {
+  width: 15em;
+  height: 15em;
+}
 
-/* header responsive */
+/* .
+.
+.
+.
+.
+.header responsive .
+.
+.
+.
+.
+*/
 @media screen and (max-width: 576px) {
   .title {
     flex-direction: column;
@@ -64,12 +92,28 @@
   .navv {
     margin-top: 1em;
   }
+  .title > h1 {
+    text-decoration: underline;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .title2 > p {
     width: 90vw;
     margin: auto;
     font-size: 1.25em;
+  }
+  .four-picture {
+    display: flex;
+  }
+  .four-picture img {
+    width: 10em;
+    height: 10em;
+  }
+  .pic-right-side {
+    font-size: smaller;
+  }
+  .navv a {
+    margin: auto;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -80,5 +124,28 @@
   .navv a {
     font-size: 1.5em;
     margin: 0.125em;
+  }
+  .four-picture {
+    display: flex;
+  }
+  .four-picture img {
+    width: 11em;
+    height: 11em;
+  }
+  .pic-right-side {
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 993px) {
+  .four-picture {
+    display: flex;
+  }
+  .four-picture img {
+    width: 12em;
+    height: 12em;
+  }
+  .pic-right-side {
+    font-size: large;
+    justify-content: center;
   }
 }
